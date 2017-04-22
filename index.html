@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Validación de formulario en HTML5</title>
+</head>
+<body>
+	
+	<h2 align="center">Formulario de Datos</h2>
+	<form action ="" >
+		<center>
+		<p>
+			<label for="nm">Ingrese su nombre</label><br>
+			<input title="Ingrese su nombre" type="text" name="nombre" required/>
+		</p>
+		<p>
+			<label for="ap">Ingrese su apellido</label><br>
+			<input title="Ingrese su apellido" type="text" name="apellido" required/>
+		</p>
+		<p>
+			<label for="tl">Ingrese su número de contacto</label><br>
+			<input title="Se necesita un número de teléfono" type="tel" name="telefono" pattern="[0-9]{8}" value = "+569">
+		</p>		
+		<p>
+			<label for="op">Escoja el automóvil deportivo que deseas:</label><br>
+			<select name="" required></>
+				<option value="">Escoja una opción</option>
+				<option value="volkswagen">Volkswagen Beetle</option>
+				<option value="dodge">Dodge Challenger</option>
+				<option value="subaru">Subaru WRX STi</option>
+				<option value="ford">Ford Mustang</option>
+				<option value="chevrolet">Chevrolet Camaro</option>
+			</select>
+		</p>
+
+		<p>
+			<label for="em">Ingrese su email</label><br>
+			<input title="Se necesita un email" type="email" name="email" required>
+		</p>
+		<p>
+			<label for="pw">Escriba una contraseña de seis o más caracteres</label><br>
+			<input title="Se necesita una contraseña" type="password" name="pw" pattern=".{6,}" title="6 o más caracteres" required>
+		</p>
+		<p>
+			<input type="submit" name="" value="ENVIAR">
+
+		</p>
+		</center>
+	</form>
+</body>
+</html>
